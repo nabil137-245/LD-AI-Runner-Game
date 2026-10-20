@@ -90,7 +90,7 @@ def open_palm(hand):
 
 
 player_x = 100
-ground_y = 390
+ground_y = 410
 player_y = ground_y
 velocity_y = 0
 jumping = False
@@ -189,7 +189,7 @@ while running:
         frame = run_frames[int(frame_index / 6) % len(run_frames)]
     frame_index += 1
 
-    player_rect = frame.get_rect(midbottom=(player_x, int(player_y + 20)))
+    player_rect = frame.get_rect(midbottom=(player_x, int(player_y + 30)))
     screen.blit(frame, player_rect)
 
     for obstacle in obstacles:
